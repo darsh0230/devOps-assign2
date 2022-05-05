@@ -15,7 +15,7 @@ public class PrimeCounter {
         in.close();
     }
 	
-	public static void getPrimeCount(int[] arr) {
+	public static int getPrimeCount(int[] arr) {
 		boolean flag;
 		int count = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -39,5 +39,6 @@ public class PrimeCounter {
 
         }
         System.out.println(" The number of prime numbers is :" + count);
+        return count;
 	}
 }

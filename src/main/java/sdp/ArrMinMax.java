@@ -15,7 +15,7 @@ public class ArrMinMax {
         getMinMax(arr);
 	}
 	
-	public static void getMinMax(int[] arr) {
+	public static int[] getMinMax(int[] arr) {
 		int max, min, i;
 		max = min = arr[0];
         for (i = 1; i < arr.length; i++) {
@@ -25,5 +25,7 @@ public class ArrMinMax {
                 min = arr[i];
         }
         System.out.println("The maximum and minimum element of array is " + max + " and " + min);
+        int arr1[] = {min, max};
+        return arr1;
 	}
 }

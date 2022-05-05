@@ -32,6 +32,6 @@ public class Main {
 		case 4: primecount.mainFunc();break;
 		default: log.info("Invalid choice");
 		}
-		
+		sc.close();
 	}
 }
